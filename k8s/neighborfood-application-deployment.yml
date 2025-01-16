@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-apps-neighborfood
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app-service
+  template:
+    metadata:
+      labels:
+        app: app-service
+    spec:
+      containers:
+        - name: neighborfood-app-container
+          image: migprogrammer/neighborfood-v2:v4
+          ports:
+            - containerPort: 8080
+
+          envFrom:
+            - configMapRef:
+                name: app-neighborfood-configmap

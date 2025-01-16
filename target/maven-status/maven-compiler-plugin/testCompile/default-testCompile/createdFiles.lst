@@ -1,0 +1,5 @@
+br\com\techchallenge\fiap\process\infrastructure\persistence\order\PedidoRepositoryTest.class
+br\com\techchallenge\fiap\process\infrastructure\persistence\order\ItensRepositoryTest.class
+br\com\techchallenge\fiap\process\framework\web\AcompanhamentoControllerTest.class
+br\com\techchallenge\fiap\process\infrastructure\persistence\acompanhamento\AcompanhamentoRepositoryTest.class
+br\com\techchallenge\fiap\process\core\usecase\acompanhamento\AcompanhamentoUseCaseTest.class
