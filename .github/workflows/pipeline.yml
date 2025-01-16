@@ -22,7 +22,6 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
 
-
       - name: Build with Maven
         run: mvn clean install
 
@@ -93,11 +92,11 @@ jobs:
         with:
           version: v0.7.0
 
-      - name: Build the Docker image
-        run: docker build -t migprogrammer/neighborfood-clean:latest .
-
-      - name: Log into Docker Hub
-        run: docker login -u migprogrammer -p ${{secrets.DOCKERHUB_TOKEN}}
-
-      - name: Push image to Docker Hub
-        run: docker push migprogrammer/neighborfood-clean:latest
+#      - name: Build the Docker image
+#        run: docker build -t migprogrammer/neighborfood-clean:latest .
+#
+#      - name: Log into Docker Hub
+#        run: docker login -u migprogrammer -p ${{secrets.DOCKERHUB_TOKEN}}
+#
+#      - name: Push image to Docker Hub
+#        run: docker push migprogrammer/neighborfood-clean:latest
