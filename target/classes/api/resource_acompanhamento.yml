@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
-  title: Swagger NeighborFood - Acompanhamento - OpenAPI 3.0
+  title: Swagger Process Video - OpenAPI 3.0
   description: |-
-    Fiap Challenge - Phase 2 - NeighborFood Project
+    <b>Fiap Challenge Hackaton</b> - Phase 5 - ProcessVideo Project
   termsOfService: http://swagger.io/terms/
   contact:
     email: miguel.silva@mackenzista.com.br
@@ -10,37 +10,32 @@ info:
 
 tags:
 
-  - name: follow-up
-    description: "Acompanhar status do pedido"
+  - name: process-videos
+    description: "Processa videos"
 
 paths:
 
-  /neighborfood/acompanhamento/{idPedido}:
-    get:
+  /process/video/:
+    post:
       tags:
-        - follow-up
-      summary: Procura o status de um pedido
-      description: Retorna o status de um pedido
-      operationId: findOrderByIdOrder
-      parameters:
-        - name: idPedido
-          in: path
-          description: id do pedido
-          required: true
-          schema:
-            type: integer
-            format: int64
+        - process-videos
+      summary: Recebe uma lista de videos
+      description: Recebe uma lista de videos para processamento
+      operationId: process
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                filename:
+                  type: array
+                  items:
+                    type: string
+                    format: binary
       responses:
         '200':
           description: successful operation
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AcompanhamentoResponseDTO'
-        '400':
-          description: Id inválido
-        '404':
-          description: Pedido não encontrado
 
 
 components:

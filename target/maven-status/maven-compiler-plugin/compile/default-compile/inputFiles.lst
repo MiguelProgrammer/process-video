@@ -11,12 +11,11 @@ C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\target\generated-sources
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\core\usecase\acompanhamento\acompanhachain\status\anemic\AcompanhamentoChainRecebido.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\framework\web\AcompanhamentoController.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\core\domain\pedido\Produto.java
-C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\target\generated-sources\openapi\src\main\java\_generated_sources_swagger_acompanhamento\NeighborfoodApi.java
+C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\infrastructure\processa\Teste.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\target\generated-sources\openapi\src\main\java\_generated_sources_swagger_acompanhamento\ApiUtil.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\infrastructure\gateways\AcompanhamentoPedidoRepositorioGateway.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\target\generated-sources\openapi\src\main\java\br\com\techchallenge\fiap\process\core\domain\dto\StatusPedidoDTO.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\target\generated-sources\openapi\src\main\java\br\com\techchallenge\fiap\process\core\domain\dto\AcompanhamentoResponseDTO.java
-C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\framework\tools\CucumberTest.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\infrastructure\persistence\order\entities\ProdutoEntity.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\target\generated-sources\openapi\src\main\java\br\com\techchallenge\fiap\process\core\domain\dto\ProdutoDTO.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\infrastructure\persistence\order\entities\ItemEntity.java
@@ -27,12 +26,14 @@ C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\target\generated-sources
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\infrastructure\persistence\acompanhamento\AcompanhamentoRepository.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\adapter\inbound\PedidoRequest.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\adapter\gateways\PedidoGateway.java
+C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\target\generated-sources\openapi\src\main\java\_generated_sources_swagger_acompanhamento\ProcessApi.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\core\domain\enums\Categoria.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\core\usecase\acompanhamento\acompanhachain\status\anemic\AcompanhamentoChainPronto.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\config\exceptions\UsuarioException.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\core\domain\pedido\Item.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\config\beans\BeanConfig.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\config\exceptions\HandleException.java
+C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\infrastructure\processa\DocumentRepository.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\adapter\presenter\MapperUser.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\core\domain\enums\Status.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\config\exceptions\PedidoException.java
@@ -40,5 +41,6 @@ C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\tec
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\core\usecase\acompanhamento\acompanhachain\status\anemic\AcompanhamentoChainFinalizado.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\infrastructure\persistence\order\entities\PedidoEntity.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\core\domain\Finals.java
+C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\framework\tools\cucumber\CucumberTest.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\infrastructure\persistence\order\PedidoRepository.java
 C:\Users\Miguel Silva\Documents\Pos\fase5\process-video\src\main\java\br\com\techchallenge\fiap\process\ProcessVideoApplication.java

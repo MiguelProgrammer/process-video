@@ -1,8 +1,8 @@
 /*
- * Copyright (c) 2024. MiguelProgrammer
+ * Copyright (c) 2024-2025. MiguelProgrammer
  */
 
-package br.com.techchallenge.fiap.process.framework.tools;
+package br.com.techchallenge.fiap.process.framework.tools.cucumber;
 
 
 import br.com.techchallenge.fiap.process.core.domain.dto.AcompanhamentoResponseDTO;
