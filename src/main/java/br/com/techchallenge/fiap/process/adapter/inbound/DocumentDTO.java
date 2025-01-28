@@ -9,6 +9,7 @@ import org.bson.types.Binary;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +38,12 @@ public class DocumentDTO {
 
         List<Document> documents = new ArrayList<>();
         filename.forEach(f -> {
-            FileInputStream fileInputStream = new FileInputStream();
+            FileInputStream fileInputStream = null;
+            try {
+                fileInputStream = new FileInputStream(f.toString());
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            }
             try {
                 Document document = new Document(new Random().nextInt(), f.getOriginalFilename(), new Binary(fileInputStream.readAllBytes()));
                 documents.add(document);

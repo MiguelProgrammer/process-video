@@ -6,7 +6,6 @@ package br.com.techchallenge.fiap.process.adapter.controllers;
 
 import br.com.techchallenge.fiap.process.adapter.inbound.DocumentDTO;
 import br.com.techchallenge.fiap.process.adapter.presenter.ProcessamentoResponse;
-import br.com.techchallenge.fiap.process.core.domain.document.Document;
 import br.com.techchallenge.fiap.process.core.usecase.processamento.ProcessamentoUseCase;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
