@@ -7,6 +7,7 @@ package br.com.techchallenge.fiap.process.core.usecase.processamento;
 import br.com.techchallenge.fiap.process.adapter.gateways.ProcessamentoGateway;
 import br.com.techchallenge.fiap.process.adapter.presenter.ProcessamentoResponse;
 import br.com.techchallenge.fiap.process.core.domain.document.Document;
+import br.com.techchallenge.fiap.process.infrastructure.gateways.MapperGateway;
 import com.xuggle.mediatool.IMediaReader;
 import com.xuggle.mediatool.MediaListenerAdapter;
 import com.xuggle.mediatool.ToolFactory;
@@ -77,7 +78,7 @@ public class ProcessamentoUseCase extends MediaListenerAdapter {
                 }
 
 
-                processamentoGateway.salvaProcessamento(document.toEntity());
+                processamentoGateway.salvaProcessamento(new MapperGateway().toEntity(document));
 
                 double seconds = ((double) event.getTimeStamp()) / Global.DEFAULT_PTS_PER_SECOND;
                 System.out.printf("No tempo decorrido de  %6.3f segundos criou: %s\n", seconds, "um print. -> " + outputFilename);
