@@ -1,6 +1,4 @@
-package br.com.techchallenge.fiap.process.core.domain;/*
- * Copyright (c) 2024. MiguelProgrammer
- */
+package br.com.techchallenge.fiap.process.core.domain;
 
 import com.xuggle.xuggler.Global;
 

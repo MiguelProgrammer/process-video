@@ -15,6 +15,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import static br.com.techchallenge.fiap.process.core.domain.Finals.inputFilename;
+
 public class DocumentDTO {
 
     private List<Binary> binaryList;
@@ -40,7 +42,7 @@ public class DocumentDTO {
         filename.forEach(f -> {
             FileInputStream fileInputStream = null;
             try {
-                fileInputStream = new FileInputStream(f.toString());
+                fileInputStream = new FileInputStream(inputFilename + f.getOriginalFilename());
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
             }

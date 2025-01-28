@@ -83,7 +83,6 @@ public class ProcessamentoUseCase extends MediaListenerAdapter {
                 double seconds = ((double) event.getTimeStamp()) / Global.DEFAULT_PTS_PER_SECOND;
                 System.out.printf("No tempo decorrido de  %6.3f segundos criou: %s\n", seconds, "um print. -> " + outputFilename);
 
-                // update last write time
                 mLastPtsWrite += MICRO_SECONDS_BETWEEN_FRAMES;
             } catch (Exception e) {
                 throw new RuntimeException(e);
