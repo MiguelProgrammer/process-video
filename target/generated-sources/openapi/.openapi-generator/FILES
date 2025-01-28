@@ -2,7 +2,7 @@
 README.md
 pom.xml
 src/main/java/_generated_sources_swagger_acompanhamento/ApiUtil.java
-src/main/java/_generated_sources_swagger_acompanhamento/NeighborfoodApi.java
+src/main/java/_generated_sources_swagger_acompanhamento/ProcessApi.java
 src/main/java/br/com/techchallenge/fiap/process/core/domain/dto/AcompanhamentoResponseDTO.java
 src/main/java/br/com/techchallenge/fiap/process/core/domain/dto/CategoriaDTO.java
 src/main/java/br/com/techchallenge/fiap/process/core/domain/dto/ItemPedido.java

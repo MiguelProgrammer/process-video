@@ -2,21 +2,24 @@ package br.com.techchallenge.fiap.process.core.domain;/*
  * Copyright (c) 2024. MiguelProgrammer
  */
 
+import com.xuggle.xuggler.Global;
+
 @SuppressWarnings("test")
 public class Finals {
 
 
+    public static final double SECONDS_BETWEEN_FRAMES = 3;
+    public static final String inputFilename = "C:\\Videos\\";
+    public static final String outputFilePrefix = "C:\\Videos\\";
+    public static int mVideoStreamIndex = -1;
+    public static long mLastPtsWrite = Global.DEFAULT_PTS_PER_SECOND;
+    public static final long MICRO_SECONDS_BETWEEN_FRAMES =
+            (long) (Global.DEFAULT_PTS_PER_SECOND * SECONDS_BETWEEN_FRAMES);
+
     public static final String MESSAGE_ADM_ESTOQUE =
             "Caro adm, por favor, veja a quantia de itens cadastrado no estoque!";
-    public static final String CLIENTE_NOT_FOUND = "\n\nCliente ou Pedido não encontrado!\n\n";
-    public static final String ITENS_EM_FALLTA = "\n\nItens selecionados em falta!\n\n";
 
 
-    public static final String MESSAGE = "\n\nUsuário não encontrado ou não cadastrado!\n" +
-            "Por favor, verifique as informações inseridas.";
-    public static final String MESSAGE_SUCCESS = "Usuário cadastrado com sucesso!";
-    public static final String MESSAGE_USUARIO_CADASTRADO = "Olá usuário, que bom ter você de volta!";
-    public static final String MESSAGE_ID_UTILIZADO = "ID utilizado para cadastro já utilizado!";
 
     public static final String MESSAGE_RECEBIDO = "" +
             "______________________________\n\n" +
