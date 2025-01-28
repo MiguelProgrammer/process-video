@@ -25,8 +25,8 @@ public class SecSecurityConfig {
     @Bean
     public UserDetailsService userDetailsService(PasswordEncoder passwordEncoder) {
         User.UserBuilder usuario = User.builder();
-        UserDetails user = usuario.username("miguelprogrammer")
-                .password(passwordEncoder.encode("techchallenge5"))
+        UserDetails user = usuario.username("******")
+                .password(passwordEncoder.encode("*****"))
                 .roles()
                 .build();
         return new InMemoryUserDetailsManager(user);
