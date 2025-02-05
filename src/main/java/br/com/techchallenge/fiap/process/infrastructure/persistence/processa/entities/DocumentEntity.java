@@ -15,7 +15,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 @Getter
 @Setter
-@Document
+@Document("prints")
 @AllArgsConstructor
 @NoArgsConstructor
 public class DocumentEntity {

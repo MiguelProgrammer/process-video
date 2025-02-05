@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -23,28 +22,30 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecSecurityConfig {
 
     @Bean
-    public UserDetailsService userDetailsService(PasswordEncoder passwordEncoder) {
-        User.UserBuilder usuario = User.builder();
-        UserDetails user = usuario.username("******")
-                .password(passwordEncoder.encode("*****"))
-                .roles()
+    public UserDetailsService userDetailsService(){
+
+        UserDetails miguelProgrammer = User.builder()
+                .username("miguel_programmer")
+                .password(passwordEncoder().encode("miguel_programmer"))
+                .roles("USER")
                 .build();
-        return new InMemoryUserDetailsManager(user);
+
+        UserDetails userTechChallenge = User.builder()
+                .username("fiap_tech_challenge")
+                .password(passwordEncoder().encode("fiap_tech_challenge"))
+                .roles("ADMIN")
+                .build();
+
+        return new InMemoryUserDetailsManager(miguelProgrammer,userTechChallenge);
     }
 
-
-
-
     @Bean
-    public SecurityFilterChain securedFilterChain(HttpSecurity http) throws Exception {
-        http.authorizeHttpRequests(request ->
-                    request.requestMatchers("/process/video/")
-                            .permitAll()
-                            .requestMatchers("/process/**")
-                            .authenticated())
-                .httpBasic(Customizer.withDefaults())
-                .csrf(AbstractHttpConfigurer::disable);
-
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
+        http.csrf().disable()
+                .authorizeHttpRequests((authorize)->{
+                    authorize.requestMatchers("api/v1/**").permitAll();
+                    authorize.anyRequest().authenticated();
+                }).httpBasic(Customizer.withDefaults());
         return http.build();
     }
 

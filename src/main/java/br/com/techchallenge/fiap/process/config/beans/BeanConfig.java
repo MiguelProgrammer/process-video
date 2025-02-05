@@ -15,4 +15,5 @@ public class BeanConfig {
     public ProcessamentoUseCase configBeanAcompanhamento(ProcessamentoGateway processamentoGateway) {
         return new ProcessamentoUseCase(processamentoGateway);
     }
+
 }

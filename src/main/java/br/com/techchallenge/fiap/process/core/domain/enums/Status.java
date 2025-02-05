@@ -6,7 +6,6 @@ package br.com.techchallenge.fiap.process.core.domain.enums;
 
 public enum Status {
     RECEBIDO,
-    EM_PREPARACAO,
-    PRONTO,
+    PROCESSANDO,
     FINALIZADO
 }

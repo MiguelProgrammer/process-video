@@ -26,6 +26,7 @@ public class ProcessamentoRepositorioGateway implements ProcessamentoGateway {
      * @return
      */
     @Override
+
     public ProcessamentoResponse salvaProcessamento(DocumentEntity document) {
         ProcessamentoResponse processamentoResponse = new ProcessamentoResponse(HttpStatus.SC_NO_CONTENT);
         if (documentRepository.save(document).equals(Boolean.TRUE)) {
