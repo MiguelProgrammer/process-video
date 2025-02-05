@@ -20,6 +20,10 @@ A arquitetura a ser adotada para este projeto seja clean architecture.
 
 <img src="https://github.com/user-attachments/assets/12514a6b-0c2e-4459-b1b6-6ea1d3f49017" width="500">
 
+##
+<p style='text-align: indent'>Infelizmente, não pude adotar a arquitetura voltada a eventos <b>event-driven</b>. Esta arquitetura lida diretamente com filas, processos assíncronos, para este cenário, não pude utilzar o kafka, precisava deixar minhas requests não blockantes, pensei no kafka porém a fila não iria suportar o tamanho da stream.
+Brinquei bastante com spring webflux <img src="https://gitlab.com/uploads/-/system/project/avatar/25570288/webflux.png" width="27">. Pode-se dizer que apanhei bastante para inserir uma api reativa ao meu cenário, até consegui, mas como já tinha meu usecase pronto para lidar com um certo tipo de entreda, removi o spring webflux.</p>
+
 
 
 
