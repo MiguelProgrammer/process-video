@@ -5,19 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b98da9cc-1d07-4246-9de1-00a329614987" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/config/security/SecSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/techchallenge/fiap/process/infrastructure/persistence/processa/DocumentRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/xuggle_xuggler_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/adapter/inbound/DocumentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/adapter/inbound/DocumentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/config/exceptions/Error.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/config/exceptions/HandleException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/config/exceptions/PedidoException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/config/exceptions/UsuarioException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/ProcessVideoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/ProcessVideoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/adapter/controllers/Acesso.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/adapter/gateways/AcessoGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/adapter/presenter/AcessoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/adapter/presenter/ProcessamentoResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/adapter/presenter/ProcessamentoResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/config/beans/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/config/beans/BeanConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/config/security/SecSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/config/security/SecSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/core/domain/Finals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/core/domain/Finals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/core/domain/document/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/core/domain/document/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/core/domain/enums/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/core/domain/enums/Status.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/core/usecase/processamento/ProcessamentoUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/core/usecase/processamento/ProcessamentoUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/core/usecase/processamento/acompanhachain/AcompanhamentoChain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/core/usecase/processamento/acompanhachain/status/anemic/AcompanhamentoChainFinalizado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/core/usecase/processamento/acompanhachain/status/anemic/AcompanhamentoChainPreparacao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/core/usecase/processamento/acompanhachain/status/anemic/AcompanhamentoChainPronto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/core/usecase/processamento/acompanhachain/status/anemic/AcompanhamentoChainRecebido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/framework/tools/cucumber/CucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/techchallenge/fiap/process/framework/tools/cucumber/CucumberTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/framework/web/ProcessamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/framework/web/ProcessamentoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/infrastructure/gateways/ProcessamentoRepositorioGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/infrastructure/gateways/ProcessamentoRepositorioGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/infrastructure/persistence/acesso/entities/ItemEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/infrastructure/persistence/acesso/entities/PedidoEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/infrastructure/persistence/acesso/entities/ProdutoEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/infrastructure/persistence/processa/entities/DocumentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/infrastructure/persistence/processa/entities/DocumentEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/openapi/.openapi-generator/FILES" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/openapi/.openapi-generator/FILES" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/openapi/src/main/java/_generated_sources_swagger_acompanhamento/ProcessApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/openapi/src/main/java/_generated_sources_swagger_acompanhamento/ProcessApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/openapi/src/main/java/br/com/techchallenge/fiap/process/core/domain/dto/AcompanhamentoResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/openapi/src/main/java/br/com/techchallenge/fiap/process/core/domain/dto/AcompanhamentoResponseDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/openapi/src/main/java/br/com/techchallenge/fiap/process/core/domain/dto/CategoriaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/openapi/src/main/java/br/com/techchallenge/fiap/process/core/domain/dto/CategoriaDTO.java" afterDir="false" />
@@ -25,6 +45,7 @@
       <change beforePath="$PROJECT_DIR$/target/generated-sources/openapi/src/main/java/br/com/techchallenge/fiap/process/core/domain/dto/PedidoRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/openapi/src/main/java/br/com/techchallenge/fiap/process/core/domain/dto/PedidoRequestDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/openapi/src/main/java/br/com/techchallenge/fiap/process/core/domain/dto/ProdutoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/openapi/src/main/java/br/com/techchallenge/fiap/process/core/domain/dto/ProdutoDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/openapi/src/main/java/br/com/techchallenge/fiap/process/core/domain/dto/StatusPedidoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/openapi/src/main/java/br/com/techchallenge/fiap/process/core/domain/dto/StatusPedidoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +64,9 @@
       <list>
         <option value="Enum" />
         <option value="Dockerfile" />
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -85,89 +106,101 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.NeighborfoodApp.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NeighborfoodAppl.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProcessVideoApp.executor&quot;: &quot;Debug&quot;,
-    &quot;Cucumber Java.All Features in: neighborfood-producao.executor&quot;: &quot;Coverage&quot;,
-    &quot;Cucumber Java.Feature: producao.executor&quot;: &quot;Debug&quot;,
-    &quot;Cucumber Java.Scenario: Acompanhar produção do pedido.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;JUnit.AcompanhamentoControllerTest.findOrderByIdOrder.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AcompanhamentoRepositoryTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AcompanhamentoUseCaseTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AcompanhamentoUseCaseTest.fluxoStatusPedidoExecute.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.AcompanhamentoUseCaseTest.getOrderStatusExecute.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AcompanhamentoUseCaseTest.pedidoStatusExecute.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.AcompanhamentoUseCaseTest.smsExecute.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in neighborfood-producao (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in neighborfood-producao (2).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in neighborfood-producao (3).executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.All in neighborfood-producao (4).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in neighborfood-producao.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.CucumberTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ItensRepositoryTest.findByIdPedido.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.ItensRepositoryTest.save.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.neighborfood [clean,install,-U...].executor&quot;: &quot;Debug&quot;,
-    &quot;Maven.neighborfood [clean,install,-U].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.neighborfood [clean,install,-X...].executor&quot;: &quot;Debug&quot;,
-    &quot;Maven.neighborfood [clean,install,-X].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.neighborfood [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.neighborfood [package,-DforkCount=0...].executor&quot;: &quot;Debug&quot;,
-    &quot;Maven.neighborfood [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.neighborfood [site:site].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.neighborfood [site].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.neighborfood-producao [clean,install,-U].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.neighborfood-producao [clean,install,-X].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.neighborfood-producao [compiler:testCompile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.neighborfood-producao [jacoco:report-aggregate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.neighborfood-producao [jacoco:report-integration].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.neighborfood-producao [jacoco:report].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.neighborfood-producao [site:stage-deploy].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.neighborfood-producao [test,-P...].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.neighborfood-producao [test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.process-video [clean,install,-U].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.process-video [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.process-video [install:install].executor&quot;: &quot;Run&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-Database detector&quot;: &quot;Database detector&quot;,
-    &quot;Notification.DoNotAsk-Database detector&quot;: &quot;true&quot;,
-    &quot;OpenRewrite.UpgradeSpringBoot_3_2.executor&quot;: &quot;Run&quot;,
-    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.NeighborfoodApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProcessVideoApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;developer&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/MP-Silva/OneDrive/Documentos/dependencys jar/xuggle-xuggler-5.4.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3045977&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.NeighborfoodApp.executor": "Run",
+    "Application.NeighborfoodAppl.executor": "Run",
+    "Application.ProcessVideoApp.executor": "Debug",
+    "Cucumber Java.All Features in: neighborfood-producao.executor": "Coverage",
+    "Cucumber Java.Feature: producao.executor": "Debug",
+    "Cucumber Java.Scenario: Acompanhar produção do pedido.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "true",
+    "JUnit.AcompanhamentoControllerTest.findOrderByIdOrder.executor": "Run",
+    "JUnit.AcompanhamentoRepositoryTest.executor": "Run",
+    "JUnit.AcompanhamentoUseCaseTest.executor": "Run",
+    "JUnit.AcompanhamentoUseCaseTest.fluxoStatusPedidoExecute.executor": "Debug",
+    "JUnit.AcompanhamentoUseCaseTest.getOrderStatusExecute.executor": "Run",
+    "JUnit.AcompanhamentoUseCaseTest.pedidoStatusExecute.executor": "Debug",
+    "JUnit.AcompanhamentoUseCaseTest.smsExecute.executor": "Run",
+    "JUnit.All in neighborfood-producao (1).executor": "Run",
+    "JUnit.All in neighborfood-producao (2).executor": "Run",
+    "JUnit.All in neighborfood-producao (3).executor": "Coverage",
+    "JUnit.All in neighborfood-producao (4).executor": "Run",
+    "JUnit.All in neighborfood-producao.executor": "Coverage",
+    "JUnit.CucumberTest.executor": "Run",
+    "JUnit.DocumentRepositoryTest.save.executor": "Run",
+    "JUnit.ItensRepositoryTest.findByIdPedido.executor": "Debug",
+    "JUnit.ItensRepositoryTest.save.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "Maven.ProcessVideoApp.executor": "Run",
+    "Maven.neighborfood [clean,install,-U...].executor": "Debug",
+    "Maven.neighborfood [clean,install,-U].executor": "Run",
+    "Maven.neighborfood [clean,install,-X...].executor": "Debug",
+    "Maven.neighborfood [clean,install,-X].executor": "Run",
+    "Maven.neighborfood [clean,install].executor": "Run",
+    "Maven.neighborfood [package,-DforkCount=0...].executor": "Debug",
+    "Maven.neighborfood [package].executor": "Run",
+    "Maven.neighborfood [site:site].executor": "Run",
+    "Maven.neighborfood [site].executor": "Run",
+    "Maven.neighborfood-producao [clean,install,-U].executor": "Run",
+    "Maven.neighborfood-producao [clean,install,-X].executor": "Run",
+    "Maven.neighborfood-producao [compiler:testCompile].executor": "Run",
+    "Maven.neighborfood-producao [jacoco:report-aggregate].executor": "Run",
+    "Maven.neighborfood-producao [jacoco:report-integration].executor": "Run",
+    "Maven.neighborfood-producao [jacoco:report].executor": "Run",
+    "Maven.neighborfood-producao [site:stage-deploy].executor": "Run",
+    "Maven.neighborfood-producao [test,-P...].executor": "Run",
+    "Maven.neighborfood-producao [test].executor": "Run",
+    "Maven.process-video [clean,install,-U].executor": "Run",
+    "Maven.process-video [clean,install].executor": "Run",
+    "Maven.process-video [clean:clean].executor": "Run",
+    "Maven.process-video [compiler:compile].executor": "Run",
+    "Maven.process-video [deploy:deploy].executor": "Run",
+    "Maven.process-video [install,--non-recursive].executor": "Run",
+    "Maven.process-video [install:install].executor": "Run",
+    "Maven.process-video [install].executor": "Run",
+    "Maven.process-video [spring-boot:start].executor": "Run",
+    "Notification.DisplayName-DoNotAsk-Database detector": "Database detector",
+    "Notification.DoNotAsk-Database detector": "true",
+    "OpenRewrite.UpgradeSpringBoot_3_2.executor": "Run",
+    "OverrideImplement.generate.javadoc": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.NeighborfoodApplication.executor": "Run",
+    "Spring Boot.ProcessVideoApplication.executor": "Debug",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "developer",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/MP-Silva/OneDrive/Documentos/Projetos 2025/Pos/fase5/process-video/src/test/java",
+    "last_opened_file_path": "C:/Users/MP-Silva/OneDrive/Documentos/dependencys jar/xuggle-xuggler-5.4.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3045977",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.techchallenge.fiap.neighborfood.config" />
@@ -193,6 +226,7 @@
       <recent name="br.com.techchallenge.fiap.neighborfood" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="br.com.techchallenge.fiap.process.infrastructure.persistence.processa" />
       <recent name="br.com.techchallenge.fiap.neighborfood.core.usecase.acompanhamento" />
       <recent name="br.com.techchallenge.fiap.neighborfood.framework.web" />
       <recent name="br.com.techchallenge.fiap.neighborfood.infrastructure.persistence.order" />
@@ -206,7 +240,7 @@
       <recent name="br.com.techchallenge.fiap.neighborfood.adapter.gateways" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProcessVideoApplication">
+  <component name="RunManager" selected="JUnit.DocumentRepositoryTest.save">
     <configuration name="ProcessVideoApp" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../../../../Program Files/Java/jdk-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -226,6 +260,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DocumentRepositoryTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="process-video" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.techchallenge.fiap.process.infrastructure.persistence.processa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.techchallenge.fiap.process.infrastructure.persistence.processa" />
+      <option name="MAIN_CLASS_NAME" value="br.com.techchallenge.fiap.process.infrastructure.persistence.processa.DocumentRepositoryTest" />
+      <option name="METHOD_NAME" value="save" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProcessVideoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="process-video" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.techchallenge.fiap.process.ProcessVideoApplication" />
@@ -235,8 +285,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.ProcessVideoApp" />
+      <item itemvalue="JUnit.DocumentRepositoryTest.save" />
       <item itemvalue="Spring Boot.ProcessVideoApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DocumentRepositoryTest.save" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -333,7 +389,13 @@
       <workItem from="1738019122336" duration="2119000" />
       <workItem from="1738065357368" duration="7841000" />
       <workItem from="1738076351975" duration="9182000" />
-      <workItem from="1738097187856" duration="3750000" />
+      <workItem from="1738097187856" duration="4078000" />
+      <workItem from="1738498816242" duration="12674000" />
+      <workItem from="1738515120127" duration="1920000" />
+      <workItem from="1738542866600" duration="5686000" />
+      <workItem from="1738623329441" duration="10238000" />
+      <workItem from="1738718022391" duration="10383000" />
+      <workItem from="1738728506463" duration="2277000" />
     </task>
     <servers />
   </component>
@@ -497,7 +559,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/adapter/presenter/ProcessamentoResponse.java</url>
-          <line>13</line>
+          <line>14</line>
           <option name="timeStamp" value="273" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -639,12 +701,12 @@
           <option name="timeStamp" value="325" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/framework/tools/cucumber/CucumberTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/techchallenge/fiap/process/framework/tools/cucumber/CucumberTest.java</url>
           <line>34</line>
           <option name="timeStamp" value="328" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/framework/tools/cucumber/CucumberTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/techchallenge/fiap/process/framework/tools/cucumber/CucumberTest.java</url>
           <line>39</line>
           <option name="timeStamp" value="330" />
         </line-breakpoint>
@@ -658,40 +720,21 @@
           <line>40</line>
           <option name="timeStamp" value="375" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/framework/web/ProcessamentoController.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="376" />
+          <line>33</line>
+          <option name="timeStamp" value="386" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/framework/web/ProcessamentoController.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="378" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/framework/web/ProcessamentoController.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="380" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/framework/web/ProcessamentoController.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="383" />
+          <line>30</line>
+          <option name="timeStamp" value="414" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/framework/tools/cucumber/CucumberTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/techchallenge/fiap/process/framework/tools/cucumber/CucumberTest.java</url>
           <line>27</line>
           <properties field="REST_API_ACOMPANHEMENTO" class="br.com.techchallenge.fiap.process.framework.tools.cucumber.CucumberTest" />
           <option name="timeStamp" value="332" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/framework/web/ProcessamentoController.java</url>
-          <line>30</line>
-          <properties class="br.com.techchallenge.fiap.process.framework.web.ProcessamentoController" method="process">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="379" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/br/com/techchallenge/fiap/process/adapter/gateways/ProcessamentoGateway.java</url>

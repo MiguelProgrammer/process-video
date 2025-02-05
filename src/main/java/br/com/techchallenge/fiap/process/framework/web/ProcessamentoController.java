@@ -6,14 +6,13 @@ package br.com.techchallenge.fiap.process.framework.web;
 
 
 import br.com.techchallenge.fiap.process.adapter.controllers.Processamento;
-import br.com.techchallenge.fiap.process.adapter.presenter.ProcessamentoResponse;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 
 @RestController
@@ -26,10 +25,11 @@ public class ProcessamentoController {
         this.processamentoController = processamentoController;
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "/process/video/", consumes = {"multipart/form-data"})
-    public ResponseEntity<?> process(List<MultipartFile> filename) {
-        ProcessamentoResponse processamentoResponse = processamentoController.processa(filename);
-        return ResponseEntity.ok(processamentoResponse);
-
+    @PreAuthorize("hasRole('ROLE_USER')")
+    @PostMapping(value = "/process/video/", consumes = {"multipart/form-data"})
+    public CompletableFuture<?> process(List<MultipartFile> filename) {
+        processamentoController.processa(filename);
+        return new CompletableFuture<>();
     }
+
 }

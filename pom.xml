@@ -2,21 +2,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.5</version>
+        <version>3.3.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>br.com.techchallenge.fiap</groupId>
     <artifactId>process-video</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>process-video</name>
     <description>processa videos</description>
+
     <properties>
-        <maven.compiler.release>17</maven.compiler.release>
+        <maven.compiler.release>19</maven.compiler.release>
         <project.build.sourceEnconding>UTF-8</project.build.sourceEnconding>
+        <start-class>br.com.techchallenge.fiap.process.ProcessVideoApplication</start-class>
     </properties>
+
+
     <dependencies>
 
         <dependency>
@@ -95,7 +101,7 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <scope>test</scope>
+            <version>2.2.224</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
@@ -124,6 +130,12 @@
         </dependency>
 
         <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-test</artifactId>
             <scope>test</scope>
@@ -141,6 +153,7 @@
             <version>5.9.1</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -154,10 +167,11 @@
             <version>5.3.0</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>json-schema-validator</artifactId>
-            <version>5.3.0</version>
+            <version>5.3.2</version>
             <scope>test</scope>
         </dependency>
 
@@ -173,14 +187,6 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit-platform-engine</artifactId>
             <version>7.13.0</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>5.4.0</version>
             <scope>test</scope>
         </dependency>
 
@@ -222,18 +228,10 @@
             <version>2.29.1</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-suite-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>br.com.techchallenge.fiap</groupId>
-            <artifactId>process-video</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
     </dependencies>
@@ -246,6 +244,8 @@
                 <version>3.10.1</version>
                 <configuration>
                     <release>17</release>
+                    <source>21</source>
+                    <target>21</target>
                 </configuration>
             </plugin>
 
@@ -274,8 +274,8 @@
                         <goals>
                             <goal>generate</goal>
                         </goals>
-                            <configuration>
-                                <inputSpec>
+                        <configuration>
+                            <inputSpec>
                                 ${project.basedir}/src/main/resources/api/resource_acompanhamento.yml
                             </inputSpec>
                             <generatorName>spring</generatorName>

@@ -31,7 +31,7 @@ import java.util.Map;
 import java.util.Optional;
 import jakarta.annotation.Generated;
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-01-28T12:12:23.349717-03:00[GMT-03:00]")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-02-05T01:07:19.375310700-03:00[GMT-03:00]")
 @Validated
 @Tag(name = "process-videos", description = "Processa videos")
 public interface ProcessApi {

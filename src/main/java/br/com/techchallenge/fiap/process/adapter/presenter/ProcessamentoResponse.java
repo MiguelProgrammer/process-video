@@ -6,6 +6,7 @@ package br.com.techchallenge.fiap.process.adapter.presenter;
 
 import org.apache.http.HttpStatus;
 
+
 public class ProcessamentoResponse {
 
     private HttpStatus status;
