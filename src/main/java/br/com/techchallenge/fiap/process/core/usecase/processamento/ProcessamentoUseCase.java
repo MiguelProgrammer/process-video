@@ -45,7 +45,7 @@ public class ProcessamentoUseCase extends MediaListenerAdapter {
 
         CompletableFuture.supplyAsync(() -> {
             try {
-                Thread.sleep(1000);
+                Thread.sleep(100);
 
                 AtomicReference<String> absolutePath = new AtomicReference<>();
                 AtomicReference<IMediaReader> mediaReader = new AtomicReference<>();

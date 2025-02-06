@@ -6,6 +6,7 @@ package br.com.techchallenge.fiap.process.adapter.inbound;
 
 import br.com.techchallenge.fiap.process.core.domain.document.Document;
 import org.bson.types.Binary;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.FileInputStream;
@@ -19,21 +20,10 @@ import static br.com.techchallenge.fiap.process.core.domain.Finals.inputFilename
 
 public class DocumentDTO {
 
+    private UserDetails user;
     private List<Binary> binaryList;
 
     public DocumentDTO() {
-    }
-
-    public DocumentDTO(List<Binary> binaryList) {
-        this.binaryList = binaryList;
-    }
-
-    public List<Binary> getBinaryList() {
-        return binaryList;
-    }
-
-    public void setBinaryList(List<Binary> binaryList) {
-        this.binaryList = binaryList;
     }
 
     public List<Document> toDomain(List<MultipartFile> filename) {
@@ -54,5 +44,22 @@ public class DocumentDTO {
             }
         });
         return documents;
+    }
+
+
+    public UserDetails getUser() {
+        return user;
+    }
+
+    public void setUser(UserDetails user) {
+        this.user = user;
+    }
+
+    public List<Binary> getBinaryList() {
+        return binaryList;
+    }
+
+    public void setBinaryList(List<Binary> binaryList) {
+        this.binaryList = binaryList;
     }
 }
