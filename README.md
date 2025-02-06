@@ -1,6 +1,9 @@
 # process-video
 Projeto para finalizar última entrega - Pós-graduação FIAP
 
+<img src="https://i.imgur.com/4nXuOFw.png" width="1000">
+
+
 ##
 <p style='text-align: indent'> A ideia por de trás deste é a de receber um vídeo ou mais, realizar o processamento dos mesmos sem que nenhum se perca, persisti-los em base dados.
 Como arquiteto, a primeira questão a se pensar é a de "custos". Quão será custoso para realizer a tarefa de processamento de tais arquivos, mante-los em base dedados e consumi-los.
