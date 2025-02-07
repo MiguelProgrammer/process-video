@@ -3,6 +3,8 @@ Projeto para finalizar última entrega - Pós-graduação FIAP
 
 <img src="https://i.imgur.com/NlV37va.png" width="1000">
 
+## Miro - DDD
+<p style='text-align: indent'>link para leitura: <a href="https://miro.com/app/board/uXjVLi5-7EY=/">Doc Domain Driven Design</a></p>
 
 ##
 <p style='text-align: indent'> A ideia por de trás deste conceito é a de receber um vídeo ou mais, realizar o processamento dos mesmos, tirar prints de cada frame sem que nenhum se perca, 
@@ -43,3 +45,30 @@ Tudo isso é muito interessante, houve momentos em que parti para o que realment
 na adoção das coisas simples, na medida em que você constroi a aplicação, você precisa analisar se está pensando em atender o problema ou usar tal arquitetura ou padrão de projeto.
 Encontri diversas falhas durante o processo de desenvolvimento, realizaei diversas alterações, depuração, debugs, logs e outros meios mais de me esgotar ao ponto de volta ao início do problema e
  partir para a adoção do simples. Este projeto cooperou bo quesito visão arquitetural.</p>
+
+## Tests - Unit, Integration and System
+<p style='text-align: indent'> Cobertura baixa de testes, mas existe teste.</p>
+
+<img src="https://i.imgur.com/y09qrex.png" width="500"> 
+
+## Docker Hub
+<p style='text-align: indent'>
+ A imagem da aplicação está disponibilizada no <a href="https://hub.docker.com/r/migprogrammer/process-videos">DockerHub</a>
+ou baixe a imagem agora mesmo 
+
+```
+  docker push migprogrammer/process-videos:tagname 
+```
+
+ Observações e considerações: Ao abaixar a imagem, será necessário ter o banco NoSql MongoDb instalado, também, deixe os seus vídeos nao seguinte
+diretório 'C:\videos'.
+</p>
+
+## Observabilidade - Dynatrace 
+<p style='text-align: indent'>Usei o Dynatrace para ver como a aplicação lidá com o processamento de videos e geração de imagens</p>
+
+<img src="https://i.imgur.com/JiD0vgV.png" width="500"> 
+
+<img src="https://i.imgur.com/VsQszJk.png" width="500"> 
+
+<img src="https://i.imgur.com/qzinB4E.png" width="500"> 
