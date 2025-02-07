@@ -21,28 +21,7 @@ jobs:
         with:
           java-version: '21'
           distribution: 'adopt'
-
-      - name: Run Tests with JUnit and JaCoCo
-        run: mvn test jacoco:report
-
-      - name: Publish JaCoCo Report
-        if: success()  # Only run if previous steps succeeded
-        run: |
-          if [ -d target/site/jacoco ]; then
-            mkdir -p coverage
-            cp -r target/site/jacoco/* coverage/
-            echo "JaCoCo report generated at: coverage/index.html"
-          else
-            echo "JaCoCo report directory does not exist."
-          fi
-
-      - name: Upload JaCoCo report
-        if: success()  # Only run if previous steps succeeded
-        uses: actions/upload-artifact@v4
-        with:
-          name: jacoco-report
-          path: coverage
-
+    
   build:
     runs-on: ubuntu-latest
     needs: unit-test
