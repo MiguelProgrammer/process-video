@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2025. MiguelProgrammer
+ */
+
 package br.com.techchallenge.fiap.process;
 
 import org.springframework.boot.SpringApplication;

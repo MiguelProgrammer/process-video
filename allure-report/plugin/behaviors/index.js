@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2025. MiguelProgrammer
+ */
+
 'use strict';
 
 allure.api.addTranslation('en', {

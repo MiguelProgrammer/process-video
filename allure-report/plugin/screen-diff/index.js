@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2025. MiguelProgrammer
+ */
+
 (function () {
     var settings = allure.getPluginSettings('screen-diff', { diffType: 'diff' });
 

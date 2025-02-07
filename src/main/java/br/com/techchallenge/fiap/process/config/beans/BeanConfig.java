@@ -1,7 +1,8 @@
-package br.com.techchallenge.fiap.process.config.beans;
 /*
- * Copyright (c) 2024. MiguelProgrammer
+ * Copyright (c) 2025. MiguelProgrammer
  */
+
+package br.com.techchallenge.fiap.process.config.beans;
 
 import br.com.techchallenge.fiap.process.adapter.gateways.ProcessamentoGateway;
 import br.com.techchallenge.fiap.process.core.usecase.processamento.ProcessamentoUseCase;
