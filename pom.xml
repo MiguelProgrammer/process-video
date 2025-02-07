@@ -26,6 +26,13 @@
         <start-class>br.com.techchallenge.fiap.process.ProcessVideoApplication</start-class>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>xuggle repo</id>
+            <url>https://files.liferay.com/mirrors/xuggle.googlecode.com/svn/trunk/repo/share/java/</url>
+        </repository>
+    </repositories>
+
 
     <dependencies>
 
@@ -115,7 +122,6 @@
             <version>3.12.14</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/xuggle/xuggle-xuggler -->
         <dependency>
             <groupId>xuggle</groupId>
             <artifactId>xuggle-xuggler</artifactId>
