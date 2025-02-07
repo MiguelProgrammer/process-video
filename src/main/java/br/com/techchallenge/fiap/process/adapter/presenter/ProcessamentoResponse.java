@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024. MiguelProgrammer
+ * Copyright (c) 2024-2025. MiguelProgrammer
  */
 
 package br.com.techchallenge.fiap.process.adapter.presenter;
