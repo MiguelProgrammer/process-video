@@ -41,7 +41,7 @@ jobs:
 
       - name: Upload JaCoCo report
         if: success()  # Only run if previous steps succeeded
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: jacoco-report
           path: coverage
