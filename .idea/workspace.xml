@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b98da9cc-1d07-4246-9de1-00a329614987" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/allure.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +99,7 @@
     "JUnit.All in process-video (1).executor": "Run",
     "JUnit.All in process-video (2).executor": "Coverage",
     "JUnit.All in process-video (3).executor": "Coverage",
-    "JUnit.All in process-video.executor": "Profiler#1",
+    "JUnit.All in process-video.executor": "Coverage",
     "JUnit.CucumberTest.executor": "Run",
     "JUnit.DocumentRepositoryTest.save.executor": "Run",
     "JUnit.ItensRepositoryTest.findByIdPedido.executor": "Debug",
@@ -212,7 +217,7 @@
       <recent name="br.com.techchallenge.fiap.neighborfood.adapter.gateways" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProcessVideoApp">
+  <component name="RunManager" selected="JUnit.All in process-video">
     <configuration name="ProcessVideoApp" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -232,6 +237,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in process-video" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="process-video" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProcessVideoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="process-video" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.techchallenge.fiap.process.ProcessVideoApplication" />
@@ -241,8 +254,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.ProcessVideoApp" />
+      <item itemvalue="JUnit.All in process-video" />
       <item itemvalue="Spring Boot.ProcessVideoApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in process-video" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -348,7 +367,7 @@
       <workItem from="1738728506463" duration="2277000" />
       <workItem from="1738810921449" duration="977000" />
       <workItem from="1738889577863" duration="243000" />
-      <workItem from="1738889864403" duration="14292000" />
+      <workItem from="1738889864403" duration="17544000" />
     </task>
     <servers />
   </component>
@@ -692,5 +711,6 @@
     <SUITE FILE_PATH="coverage/process_video$ProcessamentoControllerTest.ic" NAME="ProcessamentoControllerTest Coverage Results" MODIFIED="1738899320713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>br.com.techchallenge.fiap.process.framework.web.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/process_video$All_in_process_video.ic" NAME="All in process-video Coverage Results" MODIFIED="1738909564812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
