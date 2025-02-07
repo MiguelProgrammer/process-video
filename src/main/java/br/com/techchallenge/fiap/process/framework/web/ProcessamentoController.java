@@ -15,7 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Future;
 
 
 @RestController
@@ -30,10 +32,12 @@ public class ProcessamentoController {
 
     @PreAuthorize("hasRole('ROLE_USER')")
     @PostMapping(value = "/process/video/", consumes = {"multipart/form-data"})
-    public CompletableFuture<?> process(List<MultipartFile> filename, HttpServletRequest request) {
-        logger.info("\n\nUsuário logado: {}", request.getUserPrincipal().getName() + " - Processando " + filename.size() + " arquivos!\n");
+    public Future<?> process(List<MultipartFile> filename, HttpServletRequest request) {
+        if(!Objects.isNull(request.getUserPrincipal())) {
+            logger.info("\n\nUsuário logado: {}", request.getUserPrincipal().getName() + " - Processando " + filename.size() + " arquivos!\n");
+        }
         processamentoController.processa(filename);
-        return new CompletableFuture<>();
+        return CompletableFuture.completedFuture(null);
     }
 
 }

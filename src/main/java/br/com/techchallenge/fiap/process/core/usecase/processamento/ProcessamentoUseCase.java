@@ -15,6 +15,8 @@ import com.xuggle.mediatool.ToolFactory;
 import com.xuggle.mediatool.event.IVideoPictureEvent;
 import com.xuggle.xuggler.Global;
 import org.bson.types.Binary;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.core.task.TaskExecutor;
 import org.springframework.stereotype.Component;
 
 import javax.imageio.ImageIO;
@@ -25,7 +27,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 import java.util.Random;
-import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.atomic.AtomicReference;
 
 import static br.com.techchallenge.fiap.process.core.domain.Finals.*;
@@ -34,18 +35,20 @@ import static br.com.techchallenge.fiap.process.core.domain.Finals.*;
 public class ProcessamentoUseCase extends MediaListenerAdapter {
 
     static Document document = new Document();
+    private final TaskExecutor taskExecutor;
     private final ProcessamentoGateway processamentoGateway;
 
-    public ProcessamentoUseCase(ProcessamentoGateway processamentoGateway) {
+    public ProcessamentoUseCase(ProcessamentoGateway processamentoGateway, @Qualifier("taskExecutor") TaskExecutor taskExecutor) {
         this.processamentoGateway = processamentoGateway;
+        this.taskExecutor = taskExecutor;
     }
 
 
     public ProcessamentoResponse processaExecute(List<Document> filename) {
 
-        CompletableFuture.supplyAsync(() -> {
+        taskExecutor.execute(() -> {
             try {
-                Thread.sleep(100);
+                Thread.sleep(2000);
 
                 AtomicReference<String> absolutePath = new AtomicReference<>();
                 AtomicReference<IMediaReader> mediaReader = new AtomicReference<>();
@@ -67,7 +70,6 @@ public class ProcessamentoUseCase extends MediaListenerAdapter {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            return null;
         });
         return null;
     }
