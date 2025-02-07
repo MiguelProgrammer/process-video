@@ -43,3 +43,6 @@ Tudo isso é muito interessante, houve momentos em que parti para o que realment
 na adoção das coisas simples, na medida em que você constroi a aplicação, você precisa analisar se está pensando em atender o problema ou usar tal arquitetura ou padrão de projeto.
 Encontri diversas falhas durante o processo de desenvolvimento, realizaei diversas alterações, depuração, debugs, logs e outros meios mais de me esgotar ao ponto de volta ao início do problema e
  partir para a adoção do simples. Este projeto cooperou bo quesito visão arquitetural.</p>
+
+## Docker Hub
+<p style='text-align: indent'>A imagem da aplicação está disponibilizada no DockerHub</p>
