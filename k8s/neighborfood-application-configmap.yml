@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: app-neighborfood-configmap
+  name: app-process-video-configmap
 data:
   application.properties: |
   SPRING_DATA_SOURCE_URL: jdbc:postgresql://database-neighborfood:5432/food

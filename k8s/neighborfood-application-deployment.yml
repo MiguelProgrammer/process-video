@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deployment-apps-neighborfood
+  name: deployment-apps-process-video
 spec:
   replicas: 3
   selector:
@@ -13,11 +13,11 @@ spec:
         app: app-service
     spec:
       containers:
-        - name: neighborfood-app-container
-          image: migprogrammer/neighborfood-v2:v4
+        - name: process-video-app-container
+          image: migprogrammer/process-videos:latest
           ports:
             - containerPort: 8080
 
           envFrom:
             - configMapRef:
-                name: app-neighborfood-configmap
+                name: app-process-video-configmap
