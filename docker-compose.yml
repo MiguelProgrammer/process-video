@@ -16,7 +16,7 @@ services:
       retries: 5
 
   app:
-    image: migprogrammer/process-videos
+    image: migprogrammer/process-videos:latest
     container_name: process-video-app
     ports:
       - "80:80"
