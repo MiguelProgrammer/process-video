@@ -1,0 +1,38 @@
+openapi: 3.0.0
+info:
+  title: Swagger Process Video - OpenAPI 3.0
+  description: |-
+    <b>Fiap Challenge Hackaton</b> - Phase 5 - ProcessVideo Project
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: miguel.silva@mackenzista.com.br
+  version: 0.0.2
+
+tags:
+
+  - name: process-videos
+    description: "Processa videos"
+
+paths:
+
+  /process/video/:
+    post:
+      tags:
+        - process-videos
+      summary: Recebe uma lista de videos
+      description: Recebe uma lista de videos para processamento
+      operationId: process
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                filename:
+                  type: array
+                  items:
+                    type: string
+                    format: binary
+      responses:
+        '200':
+          description: successful operation

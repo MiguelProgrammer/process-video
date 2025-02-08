@@ -1,0 +1,3 @@
+br\com\techchallenge\fiap\process\core\usecase\processamento\ProcessamentoUseCaseTest.class
+br\com\techchallenge\fiap\process\infrastructure\persistence\processa\DocumentRepositoryTest.class
+br\com\techchallenge\fiap\process\framework\web\ProcessamentoControllerTest.class

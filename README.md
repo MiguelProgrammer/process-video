@@ -62,6 +62,8 @@ ou baixe a imagem agora mesmo
 
  Observações e considerações: Ao abaixar a imagem, será necessário ter o banco NoSql MongoDb instalado, também, deixe os seus vídeos nao seguinte
 diretório 'C:\videos'.
+
+Considere também, usar o mongoDb local, configurações básicas de conexão, somente o nome do banco como videos.
 </p>
 
 ## Observabilidade - Dynatrace 

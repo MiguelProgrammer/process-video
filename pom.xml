@@ -212,6 +212,12 @@
         </dependency>
 
         <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>6.1.6</version>
@@ -279,11 +285,11 @@
                         </goals>
                         <configuration>
                             <inputSpec>
-                                ${project.basedir}/src/main/resources/api/resource_acompanhamento.yml
+                                ${project.basedir}/src/main/resources/api/process-video.yml
                             </inputSpec>
                             <generatorName>spring</generatorName>
                             <modelPackage>br.com.techchallenge.fiap.process.core.domain.dto</modelPackage>
-                            <apiPackage>$generated-sources/swagger/acompanhamento</apiPackage>
+                            <apiPackage>$generated-sources/swagger/processamento</apiPackage>
                             <configOptions>
                                 <sourceFolder>src/main/java/</sourceFolder>
                                 <delegatePattern>false</delegatePattern>

@@ -1,7 +1,7 @@
-FROM openjdk:17-jdk-alpine
+FROM openjdk:21-jdk
 LABEL authors="Miguel Silva"
 RUN mkdir /app
 WORKDIR /app
-COPY target/*.jar /app/neighborfood-v2.jar
+COPY target/*.jar /process-videos
 EXPOSE 80
-ENTRYPOINT ["java", "-jar", "/app/neighborfood-v2.jar"]
+ENTRYPOINT ["java", "-jar", "/process-videos.jar"]
